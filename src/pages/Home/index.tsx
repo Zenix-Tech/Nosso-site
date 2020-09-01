@@ -1,11 +1,15 @@
-import React from "react"
+import React from "react";
+
+import { Container, Title } from "./styles";
+
+import "../styles/GlobalStyles.css";
 
 function Home() {
   return (
-    <div className="teste">
-      <h1>Olá mundo!</h1>
-    </div>
-  )
+    <Container>
+      <Title>Você em outro nivel.</Title>
+    </Container>
+  );
 }
 
-export default Home
+export default Home;

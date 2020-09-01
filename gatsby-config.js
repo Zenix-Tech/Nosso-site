@@ -7,11 +7,15 @@
 module.exports = {
   /* Your site config here */
   plugins: [
+    `gatsby-plugin-typescript`,
+    `gatsby-plugin-styled-components`,
     {
-      resolve: `gatsby-plugin-typescript`,
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "pages",
+        path: `${__dirname}/src/pages`,
+      },
     },
-    {
-      resolve: `gatsby-plugin-styled-components`,
-    },
+    "gatsby-plugin-react-helmet",
   ],
-}
+};
