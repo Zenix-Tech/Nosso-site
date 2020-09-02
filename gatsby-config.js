@@ -5,17 +5,41 @@
  */
 
 module.exports = {
-  /* Your site config here */
   plugins: [
     `gatsby-plugin-typescript`,
     `gatsby-plugin-styled-components`,
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: "pages",
+        name: 'pages',
         path: `${__dirname}/src/pages`,
       },
     },
-    "gatsby-plugin-react-helmet",
+    'gatsby-plugin-react-helmet',
+    {
+      resolve: 'gatsby-plugin-webfonts',
+      options: {
+        fonts: {
+          google: [
+            {
+              family: 'Nunito Sans',
+              variants: ['400', '700', '900'],
+            },
+            {
+              family: 'Roboto',
+              variants: ['300', '400', '500'],
+            },
+            {
+              family: 'Poppins',
+              variants: ['400'],
+            },
+            {
+              family: 'Ubuntu',
+              variants: ['400'],
+            },
+          ],
+        },
+      },
+    },
   ],
 };
