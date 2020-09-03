@@ -13,9 +13,9 @@ import {
   ContactContainer,
 } from './styles';
 
-import '../styles/GlobalStyles.css';
+import '../styles/GlobalStyles.ts';
 
-import Header from '../../components/Header';
+import Header from '../../components/Header/navbar.jsx';
 import Footer from '../../components/Footer';
 
 import Hero from '../../assets/HeroImage.png';
