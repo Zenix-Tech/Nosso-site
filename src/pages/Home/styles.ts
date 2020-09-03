@@ -190,4 +190,87 @@ export const CardsContainer = styled.div`
 export const ContactContainer = styled.div`
   display: flex;
   flex-direction: column;
+
+  form {
+    margin-top: 2rem;
+
+    .inputs {
+      display: flex;
+      flex-direction: column;
+
+      align-items: center;
+
+      .input {
+        border: 2px solid #3f3d56;
+        border-radius: 10px;
+
+        width: 80%;
+        margin-top: 1.3rem;
+
+        background-color: #f2f2f2;
+      }
+
+      input {
+        padding: 0 30px;
+
+        height: 2.5rem;
+      }
+
+      textarea {
+        padding: 15px 30px;
+      }
+
+      input::placeholder,
+      textarea::placeholder {
+        color: black;
+
+        font-family: 'Nunito Sans';
+        font-weight: 400;
+      }
+
+      button {
+        display: flex;
+
+        border: hidden;
+        border-radius: 10px;
+
+        width: 80%;
+
+        height: 2.5rem;
+
+        margin-top: 1.5rem;
+
+        background-color: #5e17eb;
+
+        color: white;
+
+        font-family: 'Nunito Sans';
+        font-weight: 700;
+        font-size: 1.3rem;
+
+        p {
+          margin: auto auto auto 8%;
+        }
+
+        #icon {
+          margin: auto 8% auto auto;
+        }
+      }
+    }
+  }
+
+  .telephone {
+    display: flex;
+
+    font-family: 'Nunito Sans';
+    font-weight: 400;
+    font-size: 1.3rem;
+
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 1.5rem auto;
+
+    width: 55%;
+  }
 `;

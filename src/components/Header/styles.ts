@@ -34,7 +34,7 @@ export const LogoContainer = styled.div`
   margin-left: 20px;
 
   p {
-    font-family: 'Poppins';
+    font-family: 'Nunito Sans';
     font-size: 2.5rem;
     color: #5e17eb;
 

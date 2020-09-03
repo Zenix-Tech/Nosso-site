@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
 import { RiArrowDownSLine } from 'react-icons/ri';
+import { FiSend } from 'react-icons/fi';
+import { FaPhone } from 'react-icons/fa';
 
 import {
   Container,
@@ -10,9 +12,11 @@ import {
   CardsContainer,
   ContactContainer,
 } from './styles';
+
 import '../styles/GlobalStyles.css';
 
 import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 
 import Hero from '../../assets/HeroImage.png';
 import Development from '../../assets/develop.png';
@@ -141,8 +145,38 @@ function Home() {
           <h3 className="secondary-title">
             Entre em contato conosco e solicite um orçamento.
           </h3>
+
+          <form>
+            <div className="inputs">
+              <input type="text" placeholder="Nome" className="input" />
+              <input type="text" placeholder="Assunto" className="input" />
+              <input type="text" placeholder="E-mail" className="input" />
+              <textarea
+                name="Message"
+                cols="30"
+                rows="10"
+                className="input"
+                placeholder="Mensagem"
+              />
+
+              <button type="submit">
+                <p>Enviar</p>
+                <FiSend id="icon" />
+              </button>
+            </div>
+          </form>
+
+          <h3 className="secondary-title">
+            Se preferir, ligue pra gente para tirar dúvidas.
+          </h3>
+
+          <div className="telephone">
+            <FaPhone size={35} />
+            <p>(51) 996713794</p>
+          </div>
         </ContactContainer>
       </PageContent>
+      <Footer />
     </>
   );
 }
