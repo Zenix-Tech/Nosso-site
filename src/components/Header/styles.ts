@@ -2,17 +2,20 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
-  position: absolute;
-
+  margin: 0px;
   width: 100%;
   height: 3rem;
+  background-color: #5E17EB;
+
+  padding-left:20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
 
   .menu {
     display: flex;
 
     height: 100%;
     margin-left: auto;
-    margin-right: 1rem;
 
     align-items: center;
     justify-content: center;
@@ -26,12 +29,13 @@ export const LogoContainer = styled.div`
 
   background-color: white;
   border-radius: 0 0 5px 5px;
+  
+  padding-top: 10px;
 
   width: 4rem;
 
   align-items: center;
 
-  margin-left: 20px;
 
   p {
     font-family: 'Nunito Sans';

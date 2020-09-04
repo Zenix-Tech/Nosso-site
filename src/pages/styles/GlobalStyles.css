@@ -8,8 +8,21 @@
 body {
   margin: auto;
   height: 100%;
+  font-family: 'Nunito Sans', sans-serif;
+
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+li,a{
+  text-decoration:none;
+  list-style-type:none;
 }
 
-html {
-  scroll-behavior: smooth;
+:root{
+  --color-main: #5E17EB;
+  --color-secondary:#2F2E41;
+  --color-white: #F2F2F2;
+  --color-text: #A6A6A6;
 }

@@ -92,7 +92,6 @@ export const PageContent = styled.div`
 
 export const Carousel = styled.div`
   display: flex;
-
   overflow-x: auto;
 
   .service {

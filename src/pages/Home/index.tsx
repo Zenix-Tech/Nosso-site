@@ -15,7 +15,7 @@ import {
 
 import '../styles/GlobalStyles.ts';
 
-import Header from '../../components/Header/navbar.jsx';
+import Header from '../../components/Header/index';
 import Footer from '../../components/Footer';
 
 import Hero from '../../assets/HeroImage.png';
