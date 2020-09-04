@@ -1,7 +1,6 @@
 import React from 'react';
 
 import { Container,Text } from './styles';
-import siteDev from '../../assets/sitesdevop.png';
 
 interface ServicesProps{
   color?: string;
