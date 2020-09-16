@@ -11,8 +11,6 @@ import { RiArrowUpSLine } from 'react-icons/ri';
 
 import { Container, Social, Button } from './styles';
 
-import Copyright from '../../assets/copyright.png';
-
 const Footer: React.FC = () => {
   function handleClick() {
     window.scroll(0, 0);
@@ -20,7 +18,7 @@ const Footer: React.FC = () => {
 
   return (
     <Container>
-      <img src={Copyright} alt="Zenix" />
+      <div className="copyright"></div>
 
       <Social>
         <div>

@@ -8,6 +8,7 @@ export default createGlobalStyle`
   }
   html {
     height: 100vh;
+    overflow-x: hidden;
   }
   *, button, input {
     border: 0;
@@ -16,7 +17,14 @@ export default createGlobalStyle`
   }
   body{
     font-family: 'Nunito Sans', sans-serif;
+
   }
+
+  html, body {
+    scroll-behavior: smooth;
+
+  }
+
   ul {
     list-style: none;
     padding-left: 0;
@@ -31,5 +39,23 @@ export default createGlobalStyle`
     --color-secondary:#2F2E41;
     --color-white: #F2F2F2;
     --color-text: #A6A6A6;
+  }
+
+  @media (min-width: 600px) {
+    html {
+      font-size: 18px;
+    }
+  }
+  
+  @media (min-width: 700px) {
+    html {
+      font-size: 20px;
+    }
+  }
+
+  @media (min-height: 1000px) {
+    html {
+      font-size: 25px;
+    }
   }
 `;

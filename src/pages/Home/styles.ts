@@ -21,6 +21,9 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
 
+    width: 80%;
+    text-align: center;
+
     align-items: center;
     margin-top: 8rem;
   }
@@ -34,10 +37,30 @@ export const Container = styled.div`
     width: 95%;
 
     text-align: center;
+
+    @media (min-width: 1000px) {
+      font-size: 1.3rem;
+    }
   }
 
   .hero-image {
-    margin-top: 7rem;
+    margin-top: 2rem;
+
+    height: 10rem;
+
+    img {
+      height: 100%;
+    }
+
+    @media (min-width: 1000px) {
+      height: 18rem;
+    }
+  }
+
+  .scroll-down img {
+    margin-top: 3rem;
+
+    height: 3rem;
   }
 `;
 
@@ -45,10 +68,6 @@ export const Title = styled.h1`
   font-family: 'Nunito sans';
   font-weight: 700;
   font-size: 2rem;
-`;
-
-export const HeroImage = styled.img`
-  height: 100%;
 `;
 
 export const PageContent = styled.div`
@@ -106,15 +125,15 @@ export const Carousel = styled.div`
 
     border-radius: 5px;
 
-    margin: 2rem 2rem 0 2rem;
+    margin: 2rem;
 
     align-items: center;
 
     .image {
-      margin-top: 40px;
+      margin-top: 2rem;
 
       img {
-        height: 100%;
+        height: 6rem;
       }
     }
 
@@ -131,11 +150,20 @@ export const Carousel = styled.div`
 
       text-align: center;
 
-      width: 15rem;
+      width: 90%;
 
       margin-top: 25px;
 
-      line-height: 30px;
+      line-height: 1.5rem;
+    }
+  }
+
+  @media (min-width: 1000px) {
+    align-items: center;
+    justify-content: center;
+
+    .service {
+      font-size: 0.9rem;
     }
   }
 `;
@@ -145,8 +173,10 @@ export const CardsContainer = styled.div`
   flex-direction: column;
 
   .card {
-    height: 30rem;
-    width: 70%;
+    display: flex;
+    flex-direction: column;
+
+    width: 85%;
 
     margin-top: 2rem;
 
@@ -160,12 +190,30 @@ export const CardsContainer = styled.div`
       align-items: center;
       justify-content: center;
 
+      padding: 1rem 0;
+
       background-color: #5e17eb;
 
       height: 50%;
+
+      img {
+        height: 10rem;
+      }
     }
 
     .down {
+      display: flex;
+      flex-direction: column;
+
+      margin: 0 auto;
+
+      text-align: center;
+      align-items: center;
+
+      width: 90%;
+
+      padding: 1rem 0;
+
       h3 {
         color: #5e17eb;
         font-size: 1.5rem;
@@ -182,6 +230,37 @@ export const CardsContainer = styled.div`
         width: 14rem;
 
         margin-top: 20px;
+      }
+    }
+  }
+
+  @media (min-width: 1000px) {
+    .card {
+      flex-direction: row;
+      width: 80%;
+      height: 13rem;
+
+      .up {
+        width: 30%;
+        height: 100%;
+
+        padding: 0;
+
+        img {
+          height: 8rem;
+        }
+      }
+
+      .down {
+        .text {
+          width: 100%;
+
+          p {
+            text-align: left;
+
+            width: 90%;
+          }
+        }
       }
     }
   }
@@ -264,7 +343,7 @@ export const ContactContainer = styled.div`
 
     font-family: 'Nunito Sans';
     font-weight: 400;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 
     justify-content: space-between;
     align-items: center;

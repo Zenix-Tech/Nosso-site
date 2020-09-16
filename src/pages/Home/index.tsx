@@ -1,12 +1,11 @@
 import React, { useEffect } from 'react';
-import { RiArrowDownSLine } from 'react-icons/ri';
+import { IoIosArrowDown } from 'react-icons/io';
 import { FiSend } from 'react-icons/fi';
 import { FaPhone } from 'react-icons/fa';
 
 import {
   Container,
   Title,
-  HeroImage,
   PageContent,
   Carousel,
   CardsContainer,
@@ -15,12 +14,17 @@ import {
 
 import '../styles/GlobalStyles.ts';
 
-import Header from '../../components/Header/navbar.jsx';
+import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 
-import Hero from '../../assets/HeroImage.png';
-import Development from '../../assets/develop.png';
-import Rank from '../../assets/Rank.png';
+import Hero from '../../assets/HeroImage.svg';
+import Development from '../../assets/develop.svg';
+import SEO from '../../assets/SEO.svg';
+import Marketing from '../../assets/marketing.svg';
+import Rank from '../../assets/Rank.svg';
+import Rocket from '../../assets/rocket.svg';
+import Partner from '../../assets/partner.svg';
+import ArrowDown from '../../assets/ArrowDown.svg';
 
 function Home() {
   useEffect(() => {
@@ -44,11 +48,11 @@ function Home() {
           </p>
         </div>
         <div className="hero-image">
-          <HeroImage src={Hero} />
+          <img src={Hero} />
         </div>
 
         <div className="scroll-down">
-          <RiArrowDownSLine size={70} />
+          <img src={ArrowDown} alt="arrow down" />
         </div>
       </Container>
       <PageContent>
@@ -68,19 +72,20 @@ function Home() {
           </div>
           <div className="service">
             <div className="image">
-              <img src={Development} alt="" />
+              <img src={SEO} alt="" />
             </div>
-            <h3>Development</h3>
+            <h3>SEO</h3>
             <p>
-              Somos especialistas em desenvolvimento de sites e aplicativos.
+              Com a combinação de um belo design e otima performance, deixaremos
+              seu site dentre os primeiros nas pesquisas do google.
             </p>
           </div>
           <div className="service">
             <div className="image">
-              <img src={Development} alt="" />
+              <img src={Marketing} alt="" />
             </div>
             <div className="text">
-              <h3>Development</h3>
+              <h3>Marketing</h3>
               <p>
                 Somos especialistas em desenvolvimento de sites e aplicativos.
               </p>
@@ -109,16 +114,15 @@ function Home() {
           <div className="card">
             <div className="up">
               <div className="image">
-                <img src={Rank} alt="Rank" />
+                <img src={Rocket} alt="Rank" />
               </div>
             </div>
             <div className="down">
               <div className="text">
-                <h3>Ranqueando seu site</h3>
+                <h3>Divulgando sua marca</h3>
                 <p>
-                  Com a combinação de um belo design e otima performance,
-                  deixaremos seu site dentre os primeiros nas pesquisas do
-                  google.
+                  Com métodos de divulgação realmente efetivos, estamos prontos
+                  para divulgar sua empresa e atigir seu público alvo.
                 </p>
               </div>
             </div>
@@ -126,16 +130,16 @@ function Home() {
           <div className="card">
             <div className="up">
               <div className="image">
-                <img src={Rank} alt="Rank" />
+                <img src={Partner} alt="Rank" />
               </div>
             </div>
             <div className="down">
               <div className="text">
-                <h3>Ranqueando seu site</h3>
+                <h3>Valorizando seu trabalho</h3>
                 <p>
-                  Com a combinação de um belo design e otima performance,
-                  deixaremos seu site dentre os primeiros nas pesquisas do
-                  google.
+                  Mostre para seus clientes que sua marca é única investindo em
+                  seu visual e conteúdos digitais, passando credibilidade e
+                  confiança.
                 </p>
               </div>
             </div>
@@ -171,7 +175,7 @@ function Home() {
           </h3>
 
           <div className="telephone">
-            <FaPhone size={35} />
+            <FaPhone size={'1.2rem'} />
             <p>(51) 996713794</p>
           </div>
         </ContactContainer>

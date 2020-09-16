@@ -1,10 +1,18 @@
 import styled from 'styled-components';
 
+import Copyright from '../../assets/Footer.svg';
+
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
 
   background-color: #2f2e41;
+
+  .copyright {
+    height: 10rem;
+
+    background-image: url(${Copyright});
+  }
 `;
 
 export const Social = styled.div`
