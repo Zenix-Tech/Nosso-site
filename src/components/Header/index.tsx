@@ -12,6 +12,8 @@ import {
   ContactButton,
 } from './styles';
 
+import Logo from '../../assets/Logo.svg';
+
 const Header: React.FC = () => {
   const [status, setStatus] = useState('hidden');
 
@@ -23,7 +25,7 @@ const Header: React.FC = () => {
     <Container>
       <div className="content">
         <LogoContainer>
-          <p>ZT.</p>
+          <img src={Logo} alt="Zenix Tech" />
         </LogoContainer>
 
         <Menu>

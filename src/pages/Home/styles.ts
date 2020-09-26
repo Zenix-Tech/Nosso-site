@@ -60,7 +60,11 @@ export const Container = styled.div`
   .scroll-down img {
     margin-top: 3rem;
 
-    height: 3rem;
+    height: 2.5rem;
+
+    @media (min-width: 1000px) {
+      height: 3rem;
+    }
   }
 `;
 
@@ -73,6 +77,8 @@ export const Title = styled.h1`
 export const PageContent = styled.div`
   display: flex;
   flex-direction: column;
+
+  margin-top: 2rem;
 
   .text {
     display: flex;
@@ -89,6 +95,12 @@ export const PageContent = styled.div`
 
     .title {
       font-weight: 900;
+    }
+
+    @media (min-width: 1000px) {
+      .commentary {
+        visibility: hidden;
+      }
     }
   }
 
@@ -113,12 +125,12 @@ export const Carousel = styled.div`
   display: flex;
 
   overflow-x: auto;
+  overflow-y: hidden;
 
   .service {
     display: flex;
     flex-direction: column;
 
-    width: 15rem;
     height: 20rem;
 
     box-shadow: 0 0 20px rgba(121, 114, 114, 0.4);
@@ -126,8 +138,15 @@ export const Carousel = styled.div`
     border-radius: 5px;
 
     margin: 2rem;
-
     align-items: center;
+
+    .content {
+      display: flex;
+      flex-direction: column;
+
+      align-items: center;
+      width: 15rem;
+    }
 
     .image {
       margin-top: 2rem;
@@ -148,11 +167,11 @@ export const Carousel = styled.div`
       color: #a6a6a6;
       font-family: 'Ubuntu';
 
-      text-align: center;
+      text-align: justify;
 
       width: 90%;
 
-      margin-top: 25px;
+      margin-top: 1rem;
 
       line-height: 1.5rem;
     }
@@ -163,7 +182,23 @@ export const Carousel = styled.div`
     justify-content: center;
 
     .service {
+      width: 20rem;
+      height: 25rem;
+
       font-size: 0.9rem;
+
+      .image img {
+        height: 8rem;
+      }
+
+      h3 {
+        font-size: 1.3rem;
+      }
+
+      p {
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+      }
     }
   }
 `;
@@ -270,8 +305,12 @@ export const ContactContainer = styled.div`
   display: flex;
   flex-direction: column;
 
+  align-items: center;
+
   form {
     margin-top: 2rem;
+
+    width: 100%;
 
     .inputs {
       display: flex;
@@ -328,13 +367,26 @@ export const ContactContainer = styled.div`
         font-size: 1.3rem;
 
         p {
-          margin: auto auto auto 8%;
+          margin: auto auto auto auto;
         }
 
         #icon {
           margin: auto 8% auto auto;
         }
+
+        @media (min-width: 1000px) {
+          width: 30%;
+
+          #icon {
+            visibility: hidden;
+            position: absolute;
+          }
+        }
       }
+    }
+
+    @media (min-width: 1000px) {
+      width: 50%;
     }
   }
 
@@ -345,11 +397,15 @@ export const ContactContainer = styled.div`
     font-weight: 400;
     font-size: 1.2rem;
 
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 
     margin: 1.5rem auto;
 
-    width: 55%;
+    width: 50%;
+
+    @media (min-width: 1000px) {
+      width: 20%;
+    }
   }
 `;

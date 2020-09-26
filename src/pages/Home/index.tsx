@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import { IoIosArrowDown } from 'react-icons/io';
 import { FiSend } from 'react-icons/fi';
 import { FaPhone } from 'react-icons/fa';
 
@@ -12,7 +11,7 @@ import {
   ContactContainer,
 } from './styles';
 
-import '../styles/GlobalStyles.ts';
+import '../../styles/GlobalStyles';
 
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
@@ -25,6 +24,8 @@ import Rank from '../../assets/Rank.svg';
 import Rocket from '../../assets/rocket.svg';
 import Partner from '../../assets/partner.svg';
 import ArrowDown from '../../assets/ArrowDown.svg';
+import Phone from '../../assets/mobile_image.svg';
+import Line from '../../assets/line.svg';
 
 function Home() {
   useEffect(() => {
@@ -58,37 +59,43 @@ function Home() {
       <PageContent>
         <div className="text">
           <p className="title">CLIQUE PARA SABER MAIS.</p>
-          <p>Arraste para o lado.</p>
+          <p className="commentary">Arraste para o lado.</p>
         </div>
         <Carousel id="carousel">
           <div className="service">
-            <div className="image">
-              <img src={Development} alt="" />
-            </div>
-            <h3>Development</h3>
-            <p>
-              Somos especialistas em desenvolvimento de sites e aplicativos.
-            </p>
-          </div>
-          <div className="service">
-            <div className="image">
-              <img src={SEO} alt="" />
-            </div>
-            <h3>SEO</h3>
-            <p>
-              Com a combinação de um belo design e otima performance, deixaremos
-              seu site dentre os primeiros nas pesquisas do google.
-            </p>
-          </div>
-          <div className="service">
-            <div className="image">
-              <img src={Marketing} alt="" />
-            </div>
-            <div className="text">
-              <h3>Marketing</h3>
+            <div className="content">
+              <div className="image">
+                <img src={Development} alt="" />
+              </div>
+              <h3>Development</h3>
               <p>
                 Somos especialistas em desenvolvimento de sites e aplicativos.
               </p>
+            </div>
+          </div>
+          <div className="service">
+            <div className="content">
+              <div className="image">
+                <img src={SEO} alt="" />
+              </div>
+              <h3>SEO</h3>
+              <p>
+                Com a combinação de um belo design e otima performance,
+                deixaremos seu site dentre os primeiros nas pesquisas do google.
+              </p>
+            </div>
+          </div>
+          <div className="service">
+            <div className="content">
+              <div className="image">
+                <img src={Marketing} alt="" />
+              </div>
+              <div className="text">
+                <h3>Marketing</h3>
+                <p>
+                  Somos especialistas em desenvolvimento de sites e aplicativos.
+                </p>
+              </div>
             </div>
           </div>
         </Carousel>
@@ -145,6 +152,7 @@ function Home() {
             </div>
           </div>
         </CardsContainer>
+
         <ContactContainer>
           <h3 className="secondary-title">
             Entre em contato conosco e solicite um orçamento.

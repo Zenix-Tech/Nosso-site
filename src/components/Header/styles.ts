@@ -34,7 +34,7 @@ export const Container = styled.header`
     }
 
     #three {
-      transform: rotate(-45deg);
+      transform: rotate(-45deg) translate(45%, -0.9rem);
     }
   }
 `;
@@ -46,20 +46,16 @@ export const LogoContainer = styled.div`
 
   border-radius: 0 0 5px 5px;
 
-  width: 4rem;
+  width: 4.5rem;
+  height: 4rem;
 
   align-items: center;
+  justify-content: center;
 
   margin-left: 20px;
 
-  p {
-    font-family: 'Nunito Sans';
-    font-size: 2.5rem;
-    color: #5e17eb;
-
-    margin: 0 auto;
-
-    letter-spacing: -0.3rem;
+  img {
+    height: 2.3rem;
   }
 `;
 
@@ -67,7 +63,7 @@ export const Burger = styled.div`
   display: flex;
   flex-direction: column;
 
-  margin: auto 1rem auto auto;
+  margin: auto 2rem auto auto;
 
   align-items: center;
   justify-content: center;
@@ -95,6 +91,7 @@ export const Burger = styled.div`
 
   @media (min-width: 1000px) {
     visibility: hidden;
+    position: absolute;
   }
 `;
 
@@ -182,6 +179,10 @@ export const ContactButton = styled.button`
   border: 2px solid #8b55f8;
   border-radius: 10px;
 
+  visibility: hidden;
+
+  position: absolute;
+
   cursor: pointer;
 
   font-size: 1rem;
@@ -195,4 +196,9 @@ export const ContactButton = styled.button`
     color: white;
     border-color: white;
   }
+
+  @media (min-width: 1000px) {
+    visibility: visible;
+    position: relative;
+  } ;
 `;

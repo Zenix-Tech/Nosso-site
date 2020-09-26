@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
-import Copyright from '../../assets/Footer.svg';
+import Copyright from '../../assets/copyright_WEB.png';
+import Copyright_Mobile from '../../assets/copyright.png';
 
 export const Container = styled.div`
   display: flex;
@@ -9,9 +10,15 @@ export const Container = styled.div`
   background-color: #2f2e41;
 
   .copyright {
-    height: 10rem;
+    height: 12rem;
 
-    background-image: url(${Copyright});
+    background-image: url(${Copyright_Mobile});
+    background-position: center;
+    background-size: cover;
+
+    @media (min-width: 1000px) {
+      background-image: url(${Copyright});
+    }
   }
 `;
 
@@ -64,6 +71,8 @@ export const Button = styled.div`
   width: 40%;
   height: 2.5rem;
 
+  cursor: pointer;
+
   color: white;
 
   border-radius: 1.3rem;
@@ -74,4 +83,8 @@ export const Button = styled.div`
   box-shadow: 4px 5px 25px rgba(14, 13, 13, 0.5);
 
   align-self: center;
+
+  @media (min-width: 1000px) {
+    width: 15%;
+  }
 `;
