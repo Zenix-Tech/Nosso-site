@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { FiSend } from 'react-icons/fi';
 import { FaPhone } from 'react-icons/fa';
+import { Link } from 'gatsby';
 
 import {
   Container,
@@ -11,7 +12,7 @@ import {
   ContactContainer,
 } from './styles';
 
-import '../../styles/GlobalStyles';
+import GlobalStyle from '../../styles/GlobalStyles';
 
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
@@ -24,8 +25,6 @@ import Rank from '../../assets/Rank.svg';
 import Rocket from '../../assets/rocket.svg';
 import Partner from '../../assets/partner.svg';
 import ArrowDown from '../../assets/ArrowDown.svg';
-import Phone from '../../assets/mobile_image.svg';
-import Line from '../../assets/line.svg';
 
 function Home() {
   useEffect(() => {
@@ -39,6 +38,7 @@ function Home() {
 
   return (
     <>
+      <GlobalStyle />
       <Header />
       <Container>
         <div className="text">
@@ -53,7 +53,9 @@ function Home() {
         </div>
 
         <div className="scroll-down">
-          <img src={ArrowDown} alt="arrow down" />
+          <button onClick={() => window.scrollTo(0, window.innerHeight)}>
+            <img src={ArrowDown} alt="arrow down" />
+          </button>
         </div>
       </Container>
       <PageContent>
@@ -62,17 +64,19 @@ function Home() {
           <p className="commentary">Arraste para o lado.</p>
         </div>
         <Carousel id="carousel">
-          <div className="service">
-            <div className="content">
-              <div className="image">
-                <img src={Development} alt="" />
+          <Link to="Develop">
+            <div className="service">
+              <div className="content">
+                <div className="image">
+                  <img src={Development} alt="" />
+                </div>
+                <h3>Development</h3>
+                <p>
+                  Somos especialistas em desenvolvimento de sites e aplicativos.
+                </p>
               </div>
-              <h3>Development</h3>
-              <p>
-                Somos especialistas em desenvolvimento de sites e aplicativos.
-              </p>
             </div>
-          </div>
+          </Link>
           <div className="service">
             <div className="content">
               <div className="image">
@@ -153,7 +157,7 @@ function Home() {
           </div>
         </CardsContainer>
 
-        <ContactContainer>
+        <ContactContainer id="contact">
           <h3 className="secondary-title">
             Entre em contato conosco e solicite um orçamento.
           </h3>

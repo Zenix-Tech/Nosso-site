@@ -2,27 +2,15 @@ import styled from 'styled-components';
 
 export const Container = styled.header`
   display: flex;
-  flex-direction: column;
 
   z-index: 11;
 
   position: absolute;
 
+  background-color: #5e17eb;
+
   width: 100vw;
-  height: 5rem;
-
-  .content {
-    display: flex;
-  }
-
-  .line {
-    margin-top: 0.3rem;
-
-    width: 100vw;
-    height: 2px;
-
-    background-color: #6a26f1;
-  }
+  height: 6rem;
 
   .show {
     #one {
@@ -42,20 +30,30 @@ export const Container = styled.header`
 export const LogoContainer = styled.div`
   display: flex;
 
-  background-color: white;
-
   border-radius: 0 0 5px 5px;
 
-  width: 4.5rem;
-  height: 4rem;
+  background-color: white;
+
+  margin-left: 2rem;
+
+  width: 7rem;
+  height: 100%;
 
   align-items: center;
   justify-content: center;
 
-  margin-left: 20px;
+  a {
+    display: flex;
+
+    height: 100%;
+    width: 100%;
+
+    align-items: center;
+    justify-content: center;
+  }
 
   img {
-    height: 2.3rem;
+    height: 3rem;
   }
 `;
 
@@ -153,10 +151,11 @@ export const Menu = styled.nav`
   justify-content: space-around;
   align-self: center;
 
+  margin: 0 auto 0 25%;
+
   .link {
     color: #8b55f8;
     font-family: 'Nunito Sans';
-    font-size: 0.9rem;
 
     transition: color 0.4s ease;
   }
@@ -172,7 +171,7 @@ export const Menu = styled.nav`
 
 export const ContactButton = styled.button`
   width: 10rem;
-  height: 2rem;
+  height: 2.3rem;
 
   margin: auto 2rem auto auto;
 
@@ -187,6 +186,8 @@ export const ContactButton = styled.button`
 
   font-size: 1rem;
   font-family: 'Nunito Sans';
+
+  background-color: rgba(0, 0, 0, 0);
 
   color: #8b55f8;
 

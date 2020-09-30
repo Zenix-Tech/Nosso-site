@@ -57,6 +57,12 @@ export const Container = styled.div`
     }
   }
 
+  .scroll-down button {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+  }
+
   .scroll-down img {
     margin-top: 3rem;
 
@@ -71,7 +77,7 @@ export const Container = styled.div`
 export const Title = styled.h1`
   font-family: 'Nunito sans';
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 3rem;
 `;
 
 export const PageContent = styled.div`
@@ -123,7 +129,6 @@ export const PageContent = styled.div`
 
 export const Carousel = styled.div`
   display: flex;
-
   overflow-x: auto;
   overflow-y: hidden;
 

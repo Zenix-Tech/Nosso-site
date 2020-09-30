@@ -55,6 +55,10 @@ export const Social = styled.div`
 
     border-radius: 50%;
   }
+
+  @media (min-width: 800px) {
+    flex-direction: row;
+  }
 `;
 
 export const Button = styled.div`
