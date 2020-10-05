@@ -119,6 +119,8 @@ export const HeroHeader = styled.div`
 `;
 
 export const CardContainer = styled.div`
+  width: 80%;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: Center;
@@ -127,7 +129,7 @@ export const CardContainer = styled.div`
 
   @media (min-width: 800px) {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
   }
 `;
