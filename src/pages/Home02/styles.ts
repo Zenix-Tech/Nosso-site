@@ -29,8 +29,17 @@ export const HeroHeader = styled.div`
 
   .text h1 {
     color: var(--color-secondary);
-    font-weight: 500;
+    font-weight: 400;
     font-size: 40px;
+  }
+  strong::before {
+    content: '';
+    background-color: var(--color-main);
+    width: 180px;
+    height: 15px;
+    z-index: -2;
+    position: absolute;
+    margin-top: 58px;
   }
   .text p {
     color: var(--color-secondary);
