@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Container, Text } from './styles';
 
-interface ServicesProps {
+interface ItemServiceProps {
   color?: string;
   text: string;
   title: string;
@@ -11,7 +11,7 @@ interface ServicesProps {
   className?: string;
 }
 
-const ServicesItem: React.FC<ServicesProps> = props => {
+const CardServices: React.FC<ItemServiceProps> = props => {
   return (
     <Container className="container" color={props.color}>
       <img src={props.img} alt={props.alt} />
@@ -23,4 +23,4 @@ const ServicesItem: React.FC<ServicesProps> = props => {
   );
 };
 
-export default ServicesItem;
+export default CardServices;

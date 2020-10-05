@@ -1,12 +1,17 @@
 import React from 'react';
 import Header02 from '../../components/Header02';
 
-import { Container, HeroHeader } from './styles';
+import { Container, HeroHeader, CardContainer } from './styles';
 
 import GlobalStyle from '../../styles/GlobalStyles';
 
 import heroIlustration from '../../assets/HeroImage.svg';
 import HeroGeometric from '../../assets/hero-geometric.svg';
+import CardServices from '../../components/ItemServices';
+
+import develop from '../../assets/develop.svg';
+import seoIlustration from '../../assets/SEO.svg';
+import marketing from '../../assets/marketing.svg';
 
 const Home02: React.FC = () => {
   return (
@@ -33,6 +38,26 @@ const Home02: React.FC = () => {
             <img src={heroIlustration} id="ilustration-img" alt="" />
           </div>
         </HeroHeader>
+        <CardContainer>
+          <CardServices
+            text="Desenvolvemos desde sites e aplicativos até sistemas personalizados para você alavancar sua marca e atingir todos os seus clientes."
+            title="Desenvolvimento"
+            img={develop}
+            alt="Desenvolvimento ilustração"
+          ></CardServices>
+          <CardServices
+            text="Com a combinação de um belo design e otima performance, deixaremos seu site dentre os primeiros nas pesquisas do google."
+            title="SEO"
+            img={seoIlustration}
+            alt="SEO ilustração"
+          ></CardServices>
+          <CardServices
+            text="Montando uma estrategia de marketing digital, vamos mostrar as vantagens de contratarem os seus servicos, apresentar sua empresa principalmente no nicho que voce deseja atingir."
+            title="Marketing"
+            img={marketing}
+            alt="Marketing ilustração"
+          ></CardServices>
+        </CardContainer>
       </Container>
     </>
   );

@@ -23,7 +23,6 @@ li,a{
 }
 
 body, html {
-  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 

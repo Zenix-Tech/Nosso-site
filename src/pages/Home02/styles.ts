@@ -90,7 +90,7 @@ export const HeroHeader = styled.div`
     #geometric {
       display: block;
       position: absolute;
-      right: -50px;
+      right: 0;
       z-index: -2;
       width: 40%;
     }
@@ -115,5 +115,19 @@ export const HeroHeader = styled.div`
     button + button {
       margin: 0px 20px;
     }
+  }
+`;
+
+export const CardContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: Center;
+  flex-direction: column;
+  padding: 150px 0;
+
+  @media (min-width: 800px) {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
   }
 `;
