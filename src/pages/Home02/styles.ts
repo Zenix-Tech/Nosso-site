@@ -32,15 +32,7 @@ export const HeroHeader = styled.div`
     font-weight: 400;
     font-size: 40px;
   }
-  strong::before {
-    content: '';
-    background-color: var(--color-main);
-    width: 180px;
-    height: 15px;
-    z-index: -2;
-    position: absolute;
-    margin-top: 58px;
-  }
+
   .text p {
     color: var(--color-secondary);
     font-weight: 200;
@@ -91,7 +83,15 @@ export const HeroHeader = styled.div`
   @media (min-width: 1430px) {
     flex-direction: row;
     justify-content: space-between;
-
+    strong::before {
+      content: '';
+      background-color: var(--color-main);
+      width: 180px;
+      height: 15px;
+      z-index: -2;
+      position: absolute;
+      margin-top: 58px;
+    }
     .ilustration {
       display: flex;
       width: 45%;
