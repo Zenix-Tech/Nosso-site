@@ -39,7 +39,10 @@ export const Container = styled.div`
     text-align: center;
 
     @media (min-width: 1000px) {
-      font-size: 1.3rem;
+      font-size: 1rem;
+      font-weight: 200;
+      color: #f2f2f2;
+      width: 50%;
     }
   }
 
@@ -66,10 +69,10 @@ export const Container = styled.div`
   .scroll-down img {
     margin-top: 3rem;
 
-    height: 2.5rem;
+    height: 1.5rem;
 
     @media (min-width: 1000px) {
-      height: 3rem;
+      height: 2rem;
     }
   }
 `;
@@ -100,6 +103,7 @@ export const PageContent = styled.div`
     color: #a6a6a6;
 
     .title {
+      font-size: 1rem;
       font-weight: 900;
     }
 
@@ -204,6 +208,9 @@ export const Carousel = styled.div`
         font-size: 1.1rem;
         line-height: 1.5rem;
       }
+    }
+    .image {
+      order: 1;
     }
   }
 `;

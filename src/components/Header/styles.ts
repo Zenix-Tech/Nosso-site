@@ -10,7 +10,8 @@ export const Container = styled.header`
   background-color: #5e17eb;
 
   width: 100vw;
-  height: 6rem;
+
+  padding-bottom: 10px;
 
   .show {
     #one {
@@ -33,6 +34,8 @@ export const LogoContainer = styled.div`
   border-radius: 0 0 5px 5px;
 
   background-color: white;
+
+  padding: 10px;
 
   margin-left: 2rem;
 
@@ -143,25 +146,24 @@ export const RightMenu = styled.div`
 
 export const Menu = styled.nav`
   display: flex;
-
-  width: 30%;
-
+  width: 100%;
   visibility: hidden;
 
-  justify-content: space-around;
-  align-self: center;
-
-  margin: 0 auto 0 25%;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
 
   .link {
-    color: #8b55f8;
+    color: white;
     font-family: 'Nunito Sans';
+    font-size: 18px;
 
+    padding: 10px 20px;
     transition: color 0.4s ease;
   }
 
   .link:hover {
-    color: white;
+    color: #8b55f8;
   }
 
   @media (min-width: 1300px) {
@@ -175,8 +177,8 @@ export const ContactButton = styled.button`
 
   margin: auto 2rem auto auto;
 
-  border: 2px solid #8b55f8;
-  border-radius: 10px;
+  border: 1px solid white;
+  border-radius: 0.3rem;
 
   visibility: hidden;
 
@@ -189,13 +191,13 @@ export const ContactButton = styled.button`
 
   background-color: rgba(0, 0, 0, 0);
 
-  color: #8b55f8;
+  color: white;
 
-  transition: all 0.2s ease;
+  transition: background-color 0.4s ease;
 
   &:hover {
-    color: white;
-    border-color: white;
+    background-color: white;
+    color: var(--color-main);
   }
 
   @media (min-width: 1000px) {
