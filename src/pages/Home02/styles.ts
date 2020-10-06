@@ -251,6 +251,11 @@ export const Contact = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: border-radius 0.4s ease;
+  }
+  button:hover {
+    cursor: pointer;
+    border-radius: 0.8rem;
   }
 
   textarea {
