@@ -142,3 +142,121 @@ export const CardContainer = styled.div`
     flex-wrap: wrap;
   }
 `;
+
+export const Contact = styled.div`
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  > h1 {
+    font-size: 48px;
+    color: var(--color-secondary);
+    margin-bottom: 10px;
+  }
+  > p {
+    font-size: 24px;
+    color: var(--color-secondary);
+    font-weight: 300;
+  }
+
+  .contact-infos {
+    margin-top: 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .info-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+    width: 350px;
+    height: 200px;
+  }
+
+  .info-item .item-icon {
+    width: 50px;
+    height: 50px;
+    color: var(--color-secondary);
+  }
+  .info-item h2 {
+    font-size: 18px;
+    color: var(--color-secondary);
+    font-weight: 200;
+    margin-top: 10px;
+  }
+  .info-item:nth-child(1) h2 {
+    text-align: center;
+  }
+
+  form {
+    width: 100%;
+    padding: 50px 100px;
+    background-color: #5e17eb;
+    border-radius: 0.8rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  form h3 {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: white;
+  }
+  form .input-group {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .input-item {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+
+  .input-item label {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 5px;
+    color: white;
+  }
+  input,
+  textarea {
+    padding: 15px 20px;
+    font-size: 14px;
+    color: var(--color-secondary);
+    border: none;
+    border-radius: 0.3rem;
+  }
+  .input-group .input-item:nth-child(1) input {
+    width: 500px;
+  }
+  .input-group .input-item:nth-child(2) input {
+    width: 350px;
+  }
+  form button {
+    width: 300px;
+    padding: 20px 0;
+    font-size: 18px;
+    color: white;
+    background-color: #eb9617;
+    border: none;
+    border-radius: 0.2rem;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  textarea {
+    resize: vertical;
+    min-height: 200px;
+  }
+`;

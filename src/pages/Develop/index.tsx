@@ -4,7 +4,7 @@ import { Container } from './styles';
 
 import GlobalStyles from '../../styles/GlobalStyles';
 
-import Header from '../../components/Header/index';
+import Header02 from '../../components/Header02/index';
 import Services from '../../components/ServicesItem';
 
 import siteDev from '../../assets/sitesdevop.png';
@@ -15,7 +15,7 @@ function Develop() {
   return (
     <>
       <GlobalStyles />
-      <Header />
+      <Header02 />
       <Container>
         <Services
           img={siteDev}

@@ -1,7 +1,9 @@
 import React from 'react';
 import Header02 from '../../components/Header02';
 
-import { Container, HeroHeader, CardContainer } from './styles';
+import { Container, HeroHeader, CardContainer, Contact } from './styles';
+
+import { MdPlace, MdPhone, MdMail } from 'react-icons/md';
 
 import GlobalStyle from '../../styles/GlobalStyles';
 
@@ -58,6 +60,55 @@ const Home02: React.FC = () => {
             alt="Marketing ilustração"
           ></CardServices>
         </CardContainer>
+        <Contact>
+          <h1>Contato</h1>
+          <p>Entre em contato conosco e solicite um orçamento.</p>
+          <div className="contact-infos">
+            <div className="info-item">
+              <MdPlace className="item-icon" />
+              <h2>Rua Engenheiro Tito Marquês 380</h2>
+            </div>
+            <div className="info-item">
+              <MdPhone className="item-icon" />
+              <h2>(51) 91234-5678</h2>
+            </div>
+            <div className="info-item">
+              <MdMail className="item-icon" />
+              <h2>comercial@zenixtech.com</h2>
+            </div>
+          </div>
+          <form action="">
+            <h3>
+              Formulário para
+              <br /> contato
+            </h3>
+            <div className="input-group">
+              <div className="input-item">
+                <label htmlFor="nome">Nome</label>
+                <input type="text" placeholder="Informe seu nome" />
+              </div>
+              <div className="input-item">
+                <label htmlFor="nome">Assunto</label>
+                <input type="text" placeholder="Ex: orçamento aplicativo" />
+              </div>
+            </div>
+            <div className="input-item">
+              <label htmlFor="nome">E-mail</label>
+              <input type="mail" placeholder="Informe seu e-mail" />
+            </div>
+            <div className="input-item">
+              <label htmlFor="nome">Mensagem</label>
+              <textarea
+                name="message"
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Escreva sua mensagem"
+              ></textarea>
+            </div>
+            <button type="submit">Enviar mensagem</button>
+          </form>
+        </Contact>
       </Container>
     </>
   );

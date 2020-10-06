@@ -9,10 +9,6 @@ export const Container = styled.div`
   align-items: flex-start;
   flex-direction: column;
 
-  & + & {
-    margin: 50px 0;
-  }
-
   &::before {
     display: flex;
     content: '';
@@ -32,7 +28,7 @@ export const Container = styled.div`
     cursor: pointer;
   }
   @media (min-width: 1000px) {
-    width: 400px;
+    width: 300px;
 
     img {
       width: 200px;
@@ -40,7 +36,7 @@ export const Container = styled.div`
     }
 
     & + & {
-      margin: 0px;
+      margin-top: 0px;
     }
   }
 `;
@@ -53,9 +49,9 @@ export const Text = styled.div`
   }
   > p {
     font-size: 16px;
-    color: var(--color-text);
     font-weight: 200;
     line-height: 30px;
+    color: var(--color-secondary);
   }
 
   @media (min-width: 1230px) {
@@ -65,7 +61,6 @@ export const Text = styled.div`
     }
     > p {
       font-size: 18px;
-      color: var(--color-secondary);
       font-family: 'Poppins', sans-serif;
       font-weight: 200;
     }
