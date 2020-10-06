@@ -210,7 +210,6 @@ export const Contact = styled.div`
   }
   form .input-group {
     width: 100%;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -219,8 +218,12 @@ export const Contact = styled.div`
     display: flex;
     flex-direction: column;
     margin-top: 30px;
+    width: 100%;
   }
 
+  .input-group .input-item + .input-item {
+    margin-left: 50px;
+  }
   .input-item label {
     font-size: 16px;
     font-weight: 300;
@@ -229,17 +232,12 @@ export const Contact = styled.div`
   }
   input,
   textarea {
+    width: 100%;
     padding: 15px 20px;
     font-size: 14px;
     color: var(--color-secondary);
     border: none;
     border-radius: 0.3rem;
-  }
-  .input-group .input-item:nth-child(1) input {
-    width: 500px;
-  }
-  .input-group .input-item:nth-child(2) input {
-    width: 350px;
   }
   form button {
     width: 300px;
@@ -258,5 +256,27 @@ export const Contact = styled.div`
   textarea {
     resize: vertical;
     min-height: 200px;
+    width: 100%;
+  }
+
+  @media (max-width: 840px) {
+    form {
+      padding: 50px 20px;
+    }
+    .input-group {
+      flex-direction: column;
+    }
+    .input-group .input-item + .input-item {
+      margin-left: 0px;
+    }
+    .contact-infos {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  @media (max-width: 375px) {
+    form button {
+      width: 100%;
+    }
   }
 `;
