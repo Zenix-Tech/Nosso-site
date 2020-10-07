@@ -143,10 +143,15 @@ export const CardContainer = styled.div`
   }
 `;
 
+export const SecondServices = styled.div`
+  width: 80%;
+  margin: 0 auto;
+`;
+
 export const Contact = styled.div`
   width: 80%;
   margin: 0 auto;
-  padding: 50px 0;
+  padding: 150px 0;
   display: flex;
   justify-content: center;
   align-items: center;

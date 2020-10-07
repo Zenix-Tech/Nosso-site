@@ -1,7 +1,13 @@
 import React from 'react';
 import Header02 from '../../components/Header02';
 
-import { Container, HeroHeader, CardContainer, Contact } from './styles';
+import {
+  Container,
+  HeroHeader,
+  CardContainer,
+  Contact,
+  SecondServices,
+} from './styles';
 
 import { MdPlace, MdPhone, MdMail } from 'react-icons/md';
 
@@ -9,11 +15,15 @@ import GlobalStyle from '../../styles/GlobalStyles';
 
 import heroIlustration from '../../assets/HeroImage.svg';
 import HeroGeometric from '../../assets/hero-geometric.svg';
-import CardServices from '../../components/ItemServices';
-
 import develop from '../../assets/develop.svg';
 import seoIlustration from '../../assets/SEO.svg';
 import marketing from '../../assets/marketing.svg';
+import Rank from '../../assets/Rank.png';
+import Rocket from '../../assets/rocket.svg';
+import Partner from '../../assets/partner.svg';
+
+import SecondServicesCard from '../../components/SecondServicesCard';
+import CardServices from '../../components/ItemServices';
 
 const Home02: React.FC = () => {
   return (
@@ -60,6 +70,26 @@ const Home02: React.FC = () => {
             alt="Marketing ilustração"
           ></CardServices>
         </CardContainer>
+        <SecondServices>
+          <SecondServicesCard
+            img={Rank}
+            alt="Imagem ranqueamento"
+            title="Ranqueamos seu site"
+            text="Com a combinação de um belo design e otima performance, deixaremos seu site dentre os primeiros nas pesquisas do google."
+          />
+          <SecondServicesCard
+            img={Rocket}
+            alt="Imagem divulgação"
+            title="Divulgamos sua marca"
+            text="Com métodos de divulgação realmente efetivos, estamos prontos para divulgar sua empresa e atigir seu público alvo."
+          />
+          <SecondServicesCard
+            img={Partner}
+            alt="Medalha"
+            title="Valorizamos seu trabalho"
+            text="Mostre para seus clientes que sua marca é única investindo em seu visual e conteúdos digitais, passando credibilidade e confiança."
+          />
+        </SecondServices>
         <Contact>
           <h1>Contato</h1>
           <p>Entre em contato conosco e solicite um orçamento.</p>
